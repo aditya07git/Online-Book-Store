@@ -1,23 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <p style="background-color: yellow;top:100px;left:250px;position:absolute;"></p>
+<html>
+    <head>
+        <p style="background: yellow;top: 100px;left: 250px;position: absolute;">
+        </p>
+    </head>
+    <body style="background-image: url('book.jpg'); 
+             background-repeat: no-repeat; 
+             background-size: cover; 
+             background-position: center;">
 
-</head>
-<body background="book.jpg" style="background-repeat:no-repeat;background-size:cover;">
-    <form action="index.jsp" method="get" style="position:absolute;top:50%;left:40%;transform:translate(-50%,-50%);">
-        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <font face="comic sans ms" color="green" size="5" >Login</font>
+    <div style="
+        background-color: rgba(255,255,255,0.9);
+        width: 350px;
+        padding: 30px;
+        border-radius: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    ">
 
-        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" size="20" maxlength="20" value=""><br><br><br>
-        <label>
-            <font face="comic sans ms" color="green" size="5">Password</font>
-        </label>
-        <input type="password" size="20" maxlength="20"><br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="submit" value="submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="reset" value="reset">
-    </form>
-    
+        <h2 style="color: green;">Login</h2>
+
+        <form action="index.jsp" method="get">
+
+            <label>User ID</label><br>
+            <input type="text" size="25"><br><br>
+
+            <label>Password</label><br>
+            <input type="password" size="25"><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+    </div>
+
 </body>
 </html>
